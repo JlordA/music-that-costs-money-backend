@@ -22,3 +22,10 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+
+
+
+# token
+Create a file called "token" and paste in your API key
