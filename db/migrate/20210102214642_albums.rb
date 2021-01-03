@@ -1,4 +1,4 @@
-class CreateAlbums < ActiveRecord::Migration[6.0]
+class Albums < ActiveRecord::Migration[6.0]
   def change
     create_table :albums do |t|
       t.string :title
@@ -6,6 +6,7 @@ class CreateAlbums < ActiveRecord::Migration[6.0]
       t.integer :year
       t.string :url
       t.string :thumb
+      t.integer :wants
       t.timestamps
     end
   end

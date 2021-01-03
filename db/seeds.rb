@@ -28,6 +28,7 @@ api_data["results"].each do |album|
         artist: artist,
         year: album["year"],
         url: album["uri"],
-        thumb: album["thumb"]
+        thumb: album["thumb"],
+        wants: album["community"]["want"]
     )
 end
