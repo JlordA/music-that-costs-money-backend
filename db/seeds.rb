@@ -16,7 +16,7 @@ require 'pry'
 Album.destroy_all
 
 token = File.read("token")
-url = "https://api.discogs.com/database/search?country=japan&genre=pop&style={city%20pop}&decade=1980&token=" + token
+url = "https://api.discogs.com/database/search?country=japan&genre=pop&style={city%20pop}&decade=1980&page=1&per_page=100&token=" + token
 api_response = RestClient.get(url)
 api_data = JSON.parse(api_response)
 api_data["results"].each do |album|
