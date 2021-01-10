@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   namespace :api do
       resources :albums
       resources :users
+      post '/login', to: 'auth#login' 
       resources :posts
   end
 
